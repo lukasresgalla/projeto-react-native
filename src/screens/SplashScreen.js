@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function SplashScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Splash Screen</Text>
+      <Text style={styles.text}>Foodpark</Text>
     </View>
   );
 }
@@ -22,10 +22,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#000000', // Black background
   },
   text: {
-    fontSize: 24,
+    fontSize: 48, // Larger font size
     fontWeight: 'bold',
+    color: '#FFFFFF', // White text
+    marginBottom: 20,
+    fontFamily: 'Poppins-Bold', // Custom font
+  },
+  loader: {
+    marginTop: 10,
   },
 });
