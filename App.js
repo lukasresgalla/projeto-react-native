@@ -23,7 +23,6 @@ function DrawerNavigation() {
       <Drawer.Screen name="Início" component={HomeScreen} />
       <Drawer.Screen name="Eventos" component={EventosScreen} />
       <Drawer.Screen name="Lojas" component={LojasScreen} />
-      <Drawer.Screen name="Detalhes da Loja" component={LojaDetalhesScreen} />
       <Drawer.Screen name="Cardápio" component={CardapioScreen} />
       <Drawer.Screen name="Produto" component={ProdutoDetalhesScreen} />
       <Drawer.Screen name="Cesta" component={CestaScreen} />
