@@ -1,25 +1,47 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, Linking, FlatList } from 'react-native';
 import { darkTheme } from '../theme';
+import buttonsData from '../../assets/buttonsData.json'; 
+
+const images = [
+  require('../../assets/foto_foodpark.jpg'),
+  require('../../assets/sushi.jpg'),
+  require('../../assets/hamburguer.jpg'),
+];
 
 export default function HomeScreen() {
-  const handleOpenMaps = () => {
-    Linking.openURL('https://www.google.com/maps/search/?api=1&query=Rua+Gastronômica,+123');
-  };
+  const renderImage = ({ item }) => (
+    <Image source={item} style={styles.carouselImage} />
+  );
 
-  const handleCallPhone = () => {
-    Linking.openURL('tel:(99)9999-9999');
+  const handleButtonPress = (url) => {
+    Linking.openURL(url);
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Foodpark</Text>
-      <TouchableOpacity style={styles.button} onPress={handleOpenMaps}>
-        <Text style={styles.buttonText}>📍 Endereço: Rua Gastronômica, 123</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={handleCallPhone}>
-        <Text style={styles.buttonText}>📞 Telefone: (99) 9999-9999</Text>
-      </TouchableOpacity>
+
+      {/* Carrossel de imagens */}
+      <FlatList
+        data={images}
+        renderItem={renderImage}
+        keyExtractor={(item, index) => index.toString()}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.carousel}
+      />
+
+      {/* Botões de interação */}
+      {buttonsData.map((button, index) => (
+        <TouchableOpacity
+          key={index}
+          style={styles.button}
+          onPress={() => handleButtonPress(button.action)}
+        >
+          <Text style={styles.buttonText}>{button.text}</Text>
+        </TouchableOpacity>
+      ))}
     </View>
   );
 }
@@ -27,7 +49,6 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', padding: 20, backgroundColor: darkTheme.colors.background },
   title: { fontSize: 28, fontWeight: 'bold', color: '#FFFFFF', marginBottom: 20 },
-  image: { width: '100%', height: 220, marginVertical: 15, borderRadius: 15 },
   button: {
     backgroundColor: '#FFFFFF',
     padding: 15,
@@ -37,4 +58,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonText: { fontSize: 16, color: darkTheme.colors.textOnPrimary, fontWeight: '600' },
+  carousel: { marginTop: 20, marginBottom: 20 },
+  carouselImage: { width: 300, height: 200, marginHorizontal: 10, borderRadius: 10 },
 });

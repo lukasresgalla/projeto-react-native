@@ -1,0 +1,14 @@
+[
+    {
+      "text": "📍 Endereço: Rua Gastronômica, 123",
+      "action": "https://www.google.com/maps/search/?api=1&query=Rua+Gastronômica,+123"
+    },
+    {
+      "text": "📞 Telefone: (99) 9999-9999",
+      "action": "tel:(99)9999-9999"
+    },
+    {
+      "text": "📷 Instagram",
+      "action": "instagram://app"
+    }
+  ]
