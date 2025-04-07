@@ -45,6 +45,9 @@ export default function CardapioScreen({ route }) {
             <View style={styles.info}>
               <Text style={styles.itemNome}>{item.item}</Text>
               <Text style={styles.itemPreco}>R$ {item.price.toFixed(2)}</Text>
+              <Text style={styles.itemIngredientes}>
+                Ingredientes: {item.ingredientes.join(', ')}
+              </Text>
             </View>
             <TouchableOpacity
               style={styles.botaoAdicionar}
@@ -98,6 +101,11 @@ const styles = StyleSheet.create({
   itemPreco: {
     fontSize: 16,
     color: '#B0B0B0',
+  },
+  itemIngredientes: {
+    fontSize: 14,
+    color: '#B0B0B0',
+    marginTop: 5,
   },
   botaoAdicionar: {
     backgroundColor: '#BB86FC', 

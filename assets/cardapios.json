@@ -1,37 +1,37 @@
 {
     "☕ Café Gourmet": [
-        { "id": 1, "item": "Cappuccino", "price": 12.5, "foto": "https://www.bongusto.ind.br/wp-content/uploads/2023/06/mockup-galeria-capuccino-tradicional-xicara.jpg" },
-        { "id": 2, "item": "Espresso", "price": 8.0, "foto": "https://villacafe.com.br/blog/wp-content/uploads/2016/03/villa-cafe-gourmet-para-site.jpg" },
-        { "id": 3, "item": "Latte", "price": 10.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 4, "item": "Mocha", "price": 11.5, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 5, "item": "Croissant", "price": 6.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" }
+        { "id": 1, "item": "Cappuccino", "price": 12.5, "foto": "https://www.bongusto.ind.br/wp-content/uploads/2023/06/mockup-galeria-capuccino-tradicional-xicara.jpg", "ingredientes": ["Café espresso", "Leite vaporizado", "Espuma de leite", "Canela"] },
+        { "id": 2, "item": "Espresso", "price": 8.0, "foto": "https://villacafe.com.br/blog/wp-content/uploads/2016/03/villa-cafe-gourmet-para-site.jpg", "ingredientes": ["Café moído", "Água quente"] },
+        { "id": 3, "item": "Latte", "price": 10.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Café espresso", "Leite vaporizado"] },
+        { "id": 4, "item": "Mocha", "price": 11.5, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Café espresso", "Leite vaporizado", "Chocolate"] },
+        { "id": 5, "item": "Croissant", "price": 6.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Farinha de trigo", "Manteiga", "Ovos", "Fermento"] }
     ],
     "🍔 Burger House": [
-        { "id": 1, "item": "Classic Burger", "price": 18.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 2, "item": "Cheeseburger", "price": 20.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 3, "item": "Bacon Burger", "price": 22.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 4, "item": "Veggie Burger", "price": 19.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 5, "item": "Chicken Burger", "price": 21.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" }
+        { "id": 1, "item": "Classic Burger", "price": 18.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Pão de hambúrguer", "Carne bovina", "Alface", "Tomate", "Molho especial"] },
+        { "id": 2, "item": "Cheeseburger", "price": 20.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Pão de hambúrguer", "Carne bovina", "Queijo cheddar", "Alface", "Tomate"] },
+        { "id": 3, "item": "Bacon Burger", "price": 22.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Pão de hambúrguer", "Carne bovina", "Bacon", "Queijo cheddar", "Molho barbecue"] },
+        { "id": 4, "item": "Veggie Burger", "price": 19.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Pão integral", "Hambúrguer de grão-de-bico", "Alface", "Tomate", "Molho de iogurte"] },
+        { "id": 5, "item": "Chicken Burger", "price": 21.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Pão de hambúrguer", "Frango grelhado", "Alface", "Tomate", "Molho especial"] }
     ],
     "🍕 Pizzaria Bella": [
-        { "id": 1, "item": "Margherita Pizza", "price": 30.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 2, "item": "Pepperoni Pizza", "price": 35.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 3, "item": "Four Cheese Pizza", "price": 38.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 4, "item": "BBQ Chicken Pizza", "price": 40.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 5, "item": "Veggie Pizza", "price": 32.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" }
+        { "id": 1, "item": "Margherita Pizza", "price": 30.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Massa de pizza", "Molho de tomate", "Mussarela", "Manjericão"] },
+        { "id": 2, "item": "Pepperoni Pizza", "price": 35.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Massa de pizza", "Molho de tomate", "Mussarela", "Pepperoni"] },
+        { "id": 3, "item": "Four Cheese Pizza", "price": 38.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Massa de pizza", "Molho de tomate", "Mussarela", "Parmesão", "Gorgonzola", "Provolone"] },
+        { "id": 4, "item": "BBQ Chicken Pizza", "price": 40.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Massa de pizza", "Molho barbecue", "Frango desfiado", "Cebola roxa", "Mussarela"] },
+        { "id": 5, "item": "Veggie Pizza", "price": 32.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Massa de pizza", "Molho de tomate", "Mussarela", "Pimentão", "Cebola", "Azeitonas"] }
     ],
     "🍣 Sushi Express": [
-        { "id": 1, "item": "California Roll", "price": 25.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 2, "item": "Salmon Sashimi", "price": 30.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 3, "item": "Tuna Nigiri", "price": 28.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 4, "item": "Tempura Roll", "price": 27.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 5, "item": "Dragon Roll", "price": 35.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" }
+        { "id": 1, "item": "California Roll", "price": 25.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Arroz de sushi", "Alga nori", "Kani", "Abacate", "Pepino"] },
+        { "id": 2, "item": "Salmon Sashimi", "price": 30.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Salmão fresco"] },
+        { "id": 3, "item": "Tuna Nigiri", "price": 28.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Arroz de sushi", "Atum fresco"] },
+        { "id": 4, "item": "Tempura Roll", "price": 27.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Arroz de sushi", "Alga nori", "Camarão empanado", "Pepino"] },
+        { "id": 5, "item": "Dragon Roll", "price": 35.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Arroz de sushi", "Alga nori", "Camarão empanado", "Abacate", "Molho teriyaki"] }
     ],
     "🥗 Salada Fit": [
-        { "id": 1, "item": "Caesar Salad", "price": 18.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 2, "item": "Greek Salad", "price": 20.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 3, "item": "Quinoa Salad", "price": 22.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 4, "item": "Chicken Salad", "price": 25.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" },
-        { "id": 5, "item": "Tuna Salad", "price": 24.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif" }
+        { "id": 1, "item": "Caesar Salad", "price": 18.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Alface romana", "Croutons", "Queijo parmesão", "Molho Caesar"] },
+        { "id": 2, "item": "Greek Salad", "price": 20.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Tomate", "Pepino", "Cebola roxa", "Azeitonas", "Queijo feta"] },
+        { "id": 3, "item": "Quinoa Salad", "price": 22.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Quinoa", "Tomate cereja", "Pepino", "Cenoura", "Molho de limão"] },
+        { "id": 4, "item": "Chicken Salad", "price": 25.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Frango grelhado", "Alface", "Tomate", "Cenoura", "Molho de mostarda"] },
+        { "id": 5, "item": "Tuna Salad", "price": 24.0, "foto": "https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/1209/nao-perfil.gif", "ingredientes": ["Atum", "Alface", "Tomate", "Cebola roxa", "Molho de azeite"] }
     ]
 }
