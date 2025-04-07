@@ -22,6 +22,10 @@ export default function CardapioScreen({ route }) {
     }
   };
 
+  const abrirDetalhesProduto = (produto) => {
+    navigation.navigate('ProdutoDetalhes', { produto });
+  };
+
   const irParaCesta = () => {
     navigation.navigate('Cesta');
   };
@@ -41,7 +45,10 @@ export default function CardapioScreen({ route }) {
         data={cardapio}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.itemCardapio}>
+          <TouchableOpacity
+            style={styles.itemCardapio}
+            onPress={() => abrirDetalhesProduto(item)} // Adicionada navegação para detalhes do produto
+          >
             <Image source={{ uri: item.foto }} style={styles.foto} />
             <View style={styles.info}>
               <Text style={styles.itemNome}>{item.item}</Text>
