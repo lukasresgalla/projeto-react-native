@@ -1,14 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useFocusEffect } from '@react-navigation/native';
 import { darkTheme } from '../theme';
 
-export default function CestaScreen({ route }) {
-  const { carrinho } = route.params || {}; // Recebe os itens do carrinho via navegação
-  const [cesta, setCesta] = useState(carrinho || []); // Inicializa com os itens recebidos ou vazio
+export default function CestaScreen() {
+  const [cesta, setCesta] = useState([]);
 
-  const removerItem = (id) => {
+  useFocusEffect(
+    React.useCallback(() => {
+      const carregarCarrinho = async () => {
+        try {
+          const carrinhoSalvo = await AsyncStorage.getItem('carrinho');
+          if (carrinhoSalvo) {
+            setCesta(JSON.parse(carrinhoSalvo));
+          }
+        } catch (error) {
+          console.error('Erro ao carregar cesta', error);
+        }
+      };
+
+      carregarCarrinho();
+    }, [])
+  );
+
+  const removerItem = async (id) => {
     const novaCesta = cesta.filter(item => item.id !== id);
     setCesta(novaCesta);
+    
+    try {
+      await AsyncStorage.setItem('carrinho', JSON.stringify(novaCesta));
+    } catch (error) {
+      console.error('Erro ao remover item', error);
+    }
   };
 
   return (
