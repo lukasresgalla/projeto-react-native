@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import YoutubePlayer from 'react-native-youtube-iframe';
 import { darkTheme } from '../theme';
 
+
 const eventos = [
-  { id: 1, nome: "🎷 Show de Jazz", data: "Sexta, 19h" },
-  { id: 2, nome: "🎤 Stand-Up Comedy", data: "Sábado, 21h" },
-  { id: 3, nome: "🎸 Rock ao Vivo", data: "Domingo, 20h" },
+  { id: 1, nome: "🎷 Show de Jazz", data: "Sexta, 19h", videoId: "dQw4w9WgXcQ" },
+  { id: 2, nome: "🎤 Stand-Up Comedy", data: "Sábado, 21h", videoId: "3JZ_D3ELwOQ" },
+  { id: 3, nome: "🎸 Rock ao Vivo", data: "Domingo, 20h", videoId: "2Vv-BfVoq4g" },
 ];
 
 export default function EventosScreen() {
@@ -15,6 +17,11 @@ export default function EventosScreen() {
         <View key={evento.id} style={styles.card}>
           <Text style={styles.nome}>{evento.nome}</Text>
           <Text style={styles.data}>{evento.data}</Text>
+          <YoutubePlayer
+            height={200}
+            play={false}
+            videoId={evento.videoId}
+          />
         </View>
       ))}
     </ScrollView>

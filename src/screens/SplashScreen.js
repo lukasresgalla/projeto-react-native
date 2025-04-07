@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function SplashScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Foodpark</Text>
+      <Image source={require('../../assets/artkas-park.png')} style={styles.logo} />
     </View>
   );
 }
@@ -24,14 +24,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#000000', // Black background
   },
-  text: {
-    fontSize: 48, // Larger font size
-    fontWeight: 'bold',
-    color: '#FFFFFF', // White text
-    marginBottom: 20,
-    fontFamily: 'Poppins-Bold', // Custom font
-  },
-  loader: {
-    marginTop: 10,
+  logo: {
+    width: 400, // Adjust the width of the logo
+    height: 400, // Adjust the height of the logo
+    resizeMode: 'contain', // Ensure the logo maintains its aspect ratio
   },
 });

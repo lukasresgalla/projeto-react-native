@@ -1,23 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { darkTheme } from '../theme';
 
-export default function CestaScreen() {
-  const [cesta, setCesta] = useState([]);
+export default function CestaScreen({ route }) {
+  const { carrinho } = route.params || {}; // Recebe os itens do carrinho via navegação
+  const [cesta, setCesta] = useState(carrinho || []); // Inicializa com os itens recebidos ou vazio
 
-  useEffect(() => {
-    const carregarCesta = async () => {
-      const data = await AsyncStorage.getItem('cesta');
-      setCesta(data ? JSON.parse(data) : []);
-    };
-    carregarCesta();
-  }, []);
-
-  const removerItem = async (id) => {
+  const removerItem = (id) => {
     const novaCesta = cesta.filter(item => item.id !== id);
     setCesta(novaCesta);
-    await AsyncStorage.setItem('cesta', JSON.stringify(novaCesta));
   };
 
   return (
@@ -28,10 +19,10 @@ export default function CestaScreen() {
       ) : (
         <FlatList
           data={cesta}
-          keyExtractor={item => item.id}
+          keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <View style={styles.item}>
-              <Text style={styles.nome}>{item.nome} - {item.quantidade}</Text>
+              <Text style={styles.nome}>{item.item} - R$ {item.price.toFixed(2)}</Text>
               <Button title="Remover" color={darkTheme.colors.error} onPress={() => removerItem(item.id)} />
             </View>
           )}
@@ -45,6 +36,13 @@ const styles = StyleSheet.create({
   container: { flex: 1, padding: 20, backgroundColor: darkTheme.colors.background },
   title: { fontSize: 22, fontWeight: 'bold', color: darkTheme.colors.primary, marginBottom: 10 },
   empty: { fontSize: 16, color: darkTheme.colors.textMuted, textAlign: 'center', marginTop: 20 },
-  item: { flexDirection: 'row', justifyContent: 'space-between', backgroundColor: darkTheme.colors.surface, padding: 15, borderRadius: 12, marginVertical: 8 },
+  item: { 
+    flexDirection: 'row', 
+    justifyContent: 'space-between', 
+    backgroundColor: darkTheme.colors.surface, 
+    padding: 15, 
+    borderRadius: 12, 
+    marginVertical: 8 
+  },
   nome: { fontSize: 16, color: darkTheme.colors.text },
 });

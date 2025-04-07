@@ -1,0 +1,42 @@
+[
+  { 
+    "id": "1", 
+    "nome": "☕ Café Gourmet", 
+    "descricao": "Melhores cafés especiais", 
+    "telefone": "(11) 1234-5678", 
+    "instagram": "@cafegourmet", 
+    "foto": "https://scontent-gig4-1.xx.fbcdn.net/v/t39.30808-6/305213734_610835384080089_315738127811527418_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=RI9Dt8g2v-IQ7kNvwHKsb01&_nc_oc=AdkC2tBIVN-AqMnarBYwWfkDVFJ18yCbo3SlbQe6eAyaLThPZQyKvmJYSiZYpHbDZRM_Qz-R7L7BufuD1cOGdm2i&_nc_zt=23&_nc_ht=scontent-gig4-1.xx&_nc_gid=pn-fQYJF9dl_iX-4RYi8yQ&oh=00_AfEWRBYzO8EEVrMCgwQ2RC1zq7sNWfpvM7APYNF0WqeUGg&oe=67F90A4E"
+  },
+  { 
+    "id": "2", 
+    "nome": "🍔 Burger House", 
+    "descricao": "Hambúrgueres artesanais", 
+    "telefone": "(11) 2345-6789", 
+    "instagram": "@burgerhouse", 
+    "foto": "https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/469483086_968571705329525_6051995472581418261_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=J22zlcC_70UQ7kNvwEadq0i&_nc_oc=Adl__mHhy8efkLXLfpq5-fHAHMbNpz0eRdu1iCfyjgY4IYm-C8x_M2Nl9fftaHDEpUMYUIx-g2q9mCYwr5vDm_Ri&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=c6n2ZzaBNtewgxO1l3PSRg&oh=00_AfE1FZiAOXPwZxO0pJGDVaobSKDvqseHxZqW5t70oxH_1w&oe=67F905EC"
+  },
+  { 
+    "id": "3", 
+    "nome": "🍕 Pizzaria Bella", 
+    "descricao": "Pizzas artesanais e ingredientes frescos", 
+    "telefone": "(11) 3456-7890", 
+    "instagram": "@pizzariabella", 
+    "foto": "https://scontent-gig4-1.xx.fbcdn.net/v/t39.30808-6/279445002_5007632159305238_419939746911346462_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=QQypnJzz9NEQ7kNvwGZjk48&_nc_oc=Adn80ikBRJ8gAjpX18PpxnryngDEUA-bToMuDeH07aRKdMvVW6kZIeYkCokW-dAKsboS1p7EgJXF9OsIdIgIkpwM&_nc_zt=23&_nc_ht=scontent-gig4-1.xx&_nc_gid=YIezoH3S60lQZ-hnna4lFQ&oh=00_AfHfwEWxWnGcODxO2tT1r6OMAcEWVPXEoelXd2Gb633NPQ&oe=67F8F669"
+  },
+  { 
+    "id": "4", 
+    "nome": "🍣 Sushi Express", 
+    "descricao": "Sushis preparados na hora", 
+    "telefone": "(11) 4567-8901", 
+    "instagram": "@sushiexpress", 
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZ3EGtQNkyrbf9FFaToXyw7p5FLT1IaXpeA&s"
+  },
+  { 
+    "id": "5", 
+    "nome": "🥗 Salada Fit", 
+    "descricao": "Opções saudáveis e naturais", 
+    "telefone": "(11) 5678-9012", 
+    "instagram": "@saladafit", 
+    "foto": "https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/299805730_472949894840233_3914383553475807585_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=r6oH_2-kYbgQ7kNvwGgCM6-&_nc_oc=Adlz55LGJzc_A0nUiwqPqpK597AJyy5r06CIshELdiGZTRlNGBBgGN0uduOVDDX4GqZ1fMmSLrbEk4aNZQUuzJ3t&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=v53iqmOulyp7c5vGFBIsFA&oh=00_AfGE_5BdhHayZPsPzIYmSqY2WzdpSz5mUoypfek0OIXdtQ&oe=67F90977"
+  }
+]

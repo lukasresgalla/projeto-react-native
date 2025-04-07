@@ -20,12 +20,9 @@ const Drawer = createDrawerNavigator();
 function DrawerNavigation() {
   return (
     <Drawer.Navigator screenOptions={{ headerShown: true }}>
-      <Drawer.Screen name="Início" component={HomeScreen} />
+      <Drawer.Screen name="ARTKAS PARK" component={HomeScreen} />
       <Drawer.Screen name="Eventos" component={EventosScreen} />
       <Drawer.Screen name="Lojas" component={LojasScreen} />
-      <Drawer.Screen name="Cardápio" component={CardapioScreen} />
-      <Drawer.Screen name="Produto" component={ProdutoDetalhesScreen} />
-      <Drawer.Screen name="Cesta" component={CestaScreen} />
     </Drawer.Navigator>
   );
 }
@@ -36,6 +33,26 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Drawer" component={DrawerNavigation} />
+        <Stack.Screen 
+          name="LojaDetalhes" 
+          component={LojaDetalhesScreen} 
+          options={{ headerShown: true, title: 'Detalhes da Loja' }} 
+        />
+        <Stack.Screen 
+          name="Cardapio" 
+          component={CardapioScreen} 
+          options={{ headerShown: true, title: 'Cardápio' }} 
+        />
+        <Stack.Screen 
+          name="ProdutoDetalhes" 
+          component={ProdutoDetalhesScreen} 
+          options={{ headerShown: true, title: 'Detalhes do Produto' }} 
+        />
+        <Stack.Screen 
+          name="Cesta" 
+          component={CestaScreen} 
+          options={{ headerShown: true, title: 'Carrinho' }} 
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

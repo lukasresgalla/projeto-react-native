@@ -1,20 +1,13 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
-const lojas = [
-  { id: '1', nome: '☕ Café Gourmet', descricao: 'Melhores cafés especiais' },
-  { id: '2', nome: '🍔 Burger House', descricao: 'Hambúrgueres artesanais' },
-  { id: '3', nome: '🍕 Pizzaria Bella', descricao: 'Pizzas artesanais e ingredientes frescos' },
-  { id: '4', nome: '🍣 Sushi Express', descricao: 'Sushis preparados na hora' },
-  { id: '5', nome: '🥗 Salada Fit', descricao: 'Opções saudáveis e naturais' },
-];
+import lojas from '../../assets/lojas.json'; // Importa os dados do arquivo JSON
 
 export default function LojasScreen() {
   const navigation = useNavigation();
 
   const handlePress = (loja) => {
-    console.log(`Loja selecionada: ${loja.nome}`);
+    navigation.navigate('LojaDetalhes', { loja });
   };
 
   return (
