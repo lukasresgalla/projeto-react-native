@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', padding: 0, backgroundColor: darkTheme.colors.background },
   logo: { width: 150, height: 100, resizeMode: 'contain', marginBottom: 10 }, // Estilo para a logo
   button: {
-    backgroundColor: '#D3D3D3', 
+    backgroundColor: '#1E1E1E', 
     padding:30,
-    borderRadius: 40,
+    borderRadius: 10,
     marginVertical: 20,
-    width: '100%',
+    width: '90%',
     alignItems: 'center',
   },
-  buttonText: { fontSize: 16, color: darkTheme.colors.textOnPrimary, fontWeight: '600' },
+  buttonText: { fontSize: 16, color: '#BB86FC', fontWeight: '600' },
   carousel: { marginTop: 0, marginBottom: 0 },
   carouselImage: { width: 300, height: 200, marginHorizontal: 20, borderRadius: 10 },
 });
